@@ -51,3 +51,73 @@ a {
   color: blue;
   font-size:xx-large;
 }
+
+.button1 {
+  border: 2px solid violet; /*violet*/
+  background-color: white;
+}
+
+.button1:hover {
+  background-color: violet; 
+  color: white
+}
+
+.button2 {
+  border: 2px solid indigo; /*indigo*/
+  background-color: white;
+}
+
+.button2:hover {
+  background-color: indigo; 
+  color: white
+}
+
+.button3 {
+  border: 2px solid blue; /*blue*/
+  background-color: white;
+}
+
+.button3:hover {
+  background-color: blue;
+  color: white
+}
+
+.button4 {
+  border: 2px solid green; /*green*/
+  background-color: white;
+}
+
+.button4:hover {
+  background-color: green;
+  color: white
+}
+
+.button5 {
+  border: 2px solid rgb(230, 230, 15); /*yellow*/
+  background-color: white;
+}
+
+.button5:hover {
+  background-color: rgb(230, 230, 15); 
+  color: white
+}
+
+.button6 {
+  border: 2px solid orange; /*orange*/
+  background-color: white;
+}
+
+.button6:hover {
+  background-color: orange;
+  color: white
+}
+
+.button7 {
+  border: 2px solid red; /*red*/
+  background-color: white;
+}
+
+.button7:hover {
+  background-color: red;
+  color: white
+}
