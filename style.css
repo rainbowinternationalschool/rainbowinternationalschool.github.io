@@ -23,11 +23,11 @@ label {
   font-family: 'Oswald', sans-serif;
   border: none;
   color: white;
-  padding: 32px 64px;
+  padding: 24px 48px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 48px;
   margin: 4px 2px;
   transition-duration: 0.2s;
   cursor: pointer;
