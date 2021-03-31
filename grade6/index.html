@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            function dropdown(a) {
+                a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+            }
+        </script>
         <style>
             th {
               border: 1px solid black;
@@ -54,7 +59,13 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href = "#" target = "blank">Science</a>
+                        <div id="dropdown" onClick="dropdown(this)">
+                            <button style = "background-color: white; border: none; font-size: xx-large; width: 90px; height: 47px; font-family: inherit;"><b style = "color: blue;"><u>Science</u></b></button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="downloads/science_grade6.pdf">Science Without Answers</a>
+                            <a href="downloads/science_grade6_answered.pdf">Science With Answers</a>
+                        </div>
                     </th>
                     <th>
                         <a href = "downloads/writing_grade6.pdf" target = "blank">Writing</a>
