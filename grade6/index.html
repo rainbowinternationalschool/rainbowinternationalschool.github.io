@@ -5,6 +5,9 @@
             function dropdown(a) {
                 a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
             }
+            function noFile() {
+                alert("This file is not available yet. Please check again later.")
+            }
         </script>
         <style>
             th {
@@ -35,7 +38,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href = "#" target = "blank">Schedule</a>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Schedule</u></b></button>
                     </th>
                 </tr>
             </table>
@@ -76,7 +79,7 @@
                         <a href = "downloads/l&s_grade6.pdf" target = "blank">L & S</a>
                     </th>
                     <th>
-                        <a href = "#" target = "blank">Arabic</a>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Arabic</u></b></button>
                     </th>
                 </tr>
                 <tr>
@@ -95,10 +98,10 @@
                 </tr>
                 <tr>
                     <th>
-                        <b><a href = "#" target = "blank">Islamic</a></b>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Islamic</u></b></button>
                     </th>
                     <th>
-                        <b><a href = "#" target = "blank">SH</a></b>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>SH</u></b></button>
                     </th>
                 </tr>
             </table>
