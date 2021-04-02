@@ -4,7 +4,11 @@
         <script>
             function noFile() {
                 alert("This file is not available yet. Please check again later.")
-            }</script>
+            }
+            function dropdown(a) {
+                a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+            }
+        </script>
         <style>
             th {
               border: 1px solid black;
@@ -50,7 +54,13 @@
                 </tr>
                 <tr>
                     <th>
-                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>French</u></b></button>
+                        <div id="dropdown" onClick="dropdown(this)">
+                            <button style = "background-color: white; border: none; font-size: xx-large; width: 90px; height: 47px; font-family: inherit;"><b style = "color: blue;"><u>French</u></b></button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="downloads/french_grade7.pdf" target="blank">French Without Answers</a>
+                            <a href="downloads/french_grade7_answered.pdf" target = "blank">French With Answers</a>
+                        </div>
                     </th>
                     <th>
                         <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Physics</u></b></button>
