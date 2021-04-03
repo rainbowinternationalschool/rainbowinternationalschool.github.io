@@ -4,7 +4,12 @@
         <script>
             function noFile() {
                 alert("This file is not available yet. Please check again later.")
-            }</script>
+            }
+            
+            function dropdown(a) {
+                a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+            }
+            </script>
         <style>
             th {
               border: 1px solid black;
@@ -54,9 +59,9 @@
                     </th>
                     <!-- <th>
                         <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Physics</u></b></button>
-                    </th>
+                    </th> -->
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th>
                         <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>ESL</u></b></button>
                     </th>
@@ -79,8 +84,19 @@
                     <th>
                         <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Chemistry</u></b></button>
                     </th>
+                </tr> -->
+                <tr>
+                    <th>
+                        <div id="dropdown" onClick="dropdown(this)">
+                            <button style = "background-color: white; border: none; font-size: xx-large; width: 90px; height: 47px; font-family: inherit;"><b style = "color: blue;"><u>Islamic</u></b></button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="downloads/hadeeth_grade9.pdf" target = "blank">Hadeeth</a>
+                            <a href="downloads/tahweed_grade9.pdf" target = "blank">Tahweed</a>
+                        </div>
+                    </th>
                 </tr>
-            </table>
+            <!-- </table>
             <table class = "center" style = "border-top: 0px solid black; border-left: 10px solid black; border-right: 10px solid black; border-bottom: 10px solid black; width: 30%; table-layout: fixed;">
                 <tr>
                     <th>
