@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function dropdown(a) {
+                a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+                }
+            function noFile() {
+                alert("This file is not available yet. Please check again later.")
+            }
+        </script>
+        <style>
+            th {
+              border: 1px solid black;
+              background-color: rgb(255, 255, 255);
+            }
+        </style>
+        <link rel="stylesheet" href="../style.css">
+        <title>
+            Rainbow International School
+        </title>
+    </head>
+    <body>
+        <div style = "text-align: center;">
+            <img src = "../images/header.png" style="align-items: center;">
+        </div>
+        <hr style = "width: 100%;">
+        <br>
+        <div style = "text-align: center; padding-top: 10px; padding-bottom: 10px;">
+            <br>
+            <p style = "color: black;font-size: 64px;"><b>KG2</b></p>
+            <br>
+            <br>
+            <table class = "center" style="border: 10px solid black; width: 30%;table-layout: fixed;">
+                <tr>
+                    <th>
+                        <a href = "downloads/science_kg2.pdf" target = "blank">Science</a>
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Art</u></b></button>
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Phonics</u></b></button>
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Maths</u></b></button>
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Arabic</u></b></button>
+                    </th> 
+                </tr>
+                <tr>
+                    <th>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Let's Go</u></b></button>
+                    </th> 
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

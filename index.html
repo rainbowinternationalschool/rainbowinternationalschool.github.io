@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            function dropdown(a) {
+                a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+                }
+            function noFile() {
+                alert("This file is not available yet. Please check again later.")
+            }
+        </script>
         <link rel="stylesheet" href="style.css">
         <title>
             Rainbow International School
@@ -13,78 +21,106 @@
         <hr style = "width: 100%;">
         <br>
         <div style = "text-align: center; padding-bottom: 10px;">
-            <p style = "font-size: 48px; padding-top: 5px; color: black;">
-                Final Exams 2020-21
-                <br>
-                Pointers, Schedule, Revision Sheets and Answer Keys
+            <p style = "font-size: 48px; padding-top: 0px; color: black;">
+                Vacation Review Work
             </p>
-            <img src = "images/good_luck.png" style="float: left; padding-left: 2%;" height = 370.28px width = 284px>
-            <img src = "images/you_can_do_it.png" style = "float: right; padding-right: 2%;" height = 370.28px width = 284px>
+            <img src = "images/sun.png" style="float: left; padding-left: 2%;" height = 370.28px width = 284px>
+            <img src = "images/routine.png" style = "float: right; padding-right: 2%;" height = 370.28px width = 284px>
             <table class = "center" style = "border: 10px solid black; background-color: white;">
-                <tr>
+                <tr style = "width: fit-content;height: auto;">
                     <th style = "border: 1px solid black; background-color: white;">
-                        <a href = "downloads/schedule_3-6_girls.pdf" target = "blank">Schedule Gr3 - Gr6 Girls</a>
+                        <div id="dropdown" onClick="dropdown(this)">
+                            <button style = "background-color: white; border: none; font-size: xx-large; width: fit-content; height: 47px; font-family: inherit;"><b style = "color: blue;"><u>All About KG at RIS</u></b></button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <button onclick="noFile()" style = "border: none; font-size: xx-large; font-family: inherit; padding: 20px 16px;"><b>Eligibility</b></button>
+                            <br>
+                            <button onclick="noFile()" style = "border: none; font-size: xx-large; font-family: inherit; padding: 20px 16px;"><b>Readiness Quiz</b></button>
+                            <br>
+                            <button onclick="noFile()" style = "border: none; font-size: xx-large; font-family: inherit; padding: 20px 16px;"><b>Placement Test</b></button>
+                            <br>
+                            <button onclick="noFile()" style = "border: none; font-size: xx-large; font-family: inherit; padding: 20px 16px;"><b>Reading Evaluation</b></button>
+                        </div>
                     </th>
                 </tr>
                 <tr>
                     <th style = "border: 1px solid black; background-color: white;">
-                        <a href = "downloads/schedule_4-6_boys.pdf" target = "blank">Schedule Gr4 - Gr6 Boys</a>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Grades 1-6</u></b></button>
                     </th>
                 </tr>
                 <tr>
                     <th style = "border: 1px solid black; background-color: white;">
-                        <a href = "downloads/schedule_7-9_boys.pdf" target = "blank">Schedule Gr7 - Gr9 Boys</a>
-                    </th>
-                </tr>
-                <tr>
-                    <th style = "border: 1px solid black; background-color: white;">
-                        <a href = "downloads/schedule_7-9_girls.pdf" target = "blank">Schedule Gr7 - Gr9 Girls</a>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Grades 7-9</u></b></button>
                     </th>
                 </tr>
             </table>
             <table class = "center">
                 <tr>
                     <th>
+                            <div id="dropdown" onClick="dropdown(this)">
+                                <button class = "button button1" style="width: 100%;">KG</button>
+                            </div>
+                            <div id="myDropdown" class="dropdown-content">
+                                <button onclick="noFile()" style = "border: none; font-size: xx-large; font-family: inherit; padding: 20px 16px;"><b>KG1</b></button>
+                                <a href = "kg2/index.html" target = "_blank">KG 2</a>
+                                <a href = "kg3/index.html" target = "blank">KG 3</a>
+                            </div>
+                    </th>
+                    <th>
+                        <form action="grade4/index.html">
+                            <button type="submit" class = "button button2">Grade 1</button>
+                        </form>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
                         <form action="grade3/index.html">
-                            <button type="submit" class = "button button1">Grade 3</button>
+                            <button type="submit" class = "button button1">Grade 2</button>
                         </form>
                     </th>
                     <th>
                         <form action="grade4/index.html">
-                            <button type="submit" class = "button button2">Grade 4</button>
+                            <button type="submit" class = "button button2">Grade 3</button>
                         </form>
                     </th>
                 </tr>
                 <tr>
                     <th>
                         <form action="grade5/index.html">
-                            <button type="submit" class = "button button3">Grade 5</button>
+                            <button type="submit" class = "button button3">Grade 4</button>
                         </form>
                     </th>
                     <th>
                         <form action="grade6/index.html">
-                            <button type="submit" class = "button button4">Grade 6</button>
+                            <button type="submit" class = "button button4">Grade 5</button>
                         </form>
                     </th>
                 </tr>
                 <tr>
                     <th>
                         <form action="grade7/index.html">
-                            <button type="submit" class = "button button5">Grade 7</button>
+                            <button type="submit" class = "button button5">Grade 6</button>
                         </form>
                     </th>
                     <th>
                         <form action="grade8/index.html">
-                            <button type="submit" class = "button button6">Grade 8</button>
+                            <button type="submit" class = "button button6">Grade 7</button>
+                        </form>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <form action="grade3/index.html">
+                            <button type="submit" class = "button button1">Grade 8</button>
+                        </form>
+                    </th>
+                    <th>
+                        <form action="grade4/index.html">
+                            <button type="submit" class = "button button2">Grade 9</button>
                         </form>
                     </th>
                 </tr>
             </table>
-            <center>
-                <form action="grade9/index.html" style="width: 30%;">
-                    <button type="submit" class = "button button7">Grade 9</button>
-                </form>
-            </center>
             <br>
             <br>
             <img src = "images/revision_tips.png" height = auto width = "50%">
