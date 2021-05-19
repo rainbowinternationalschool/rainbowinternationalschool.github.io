@@ -42,7 +42,13 @@
             <table class = "center" style="border: 10px solid black; width: 30%;table-layout: fixed;">
                 <tr>
                     <th>
-                        <a href = "downloads/math_grade1.pdf" target = "blank">Math</a>
+                        <div id="dropdown" onClick="dropdown(this)">
+                            <button style = "background-color: white; border: none; font-size: xx-large; width: 90px; height: 47px; font-family: inherit;"><b style = "color: blue;"><u>Math</u></b></button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="downloads/math_grade1_part1.pdf" target = "blank">Math Part 1</a>
+                            <a href="downloads/math_grade1_part2.pdf" target = "blank">Math Part 2</a>
+                        </div>
                     </th>
                 </tr>
                 <tr>
@@ -60,11 +66,17 @@
                         <a href = "downloads/grammar_grade1.pdf" target = "blank">Grammar</a>
                     </th>
                 </tr>
-                <!-- <tr>
+                <tr>
                     <th>
-                        <a href = "downloads/science_grade3.pdf" target = "blank">Science</a>
+                        <div id="dropdown" onClick="dropdown(this)">
+                            <button style = "background-color: white; border: none; font-size: xx-large; width: 90px; height: 47px; font-family: inherit;"><b style = "color: blue;"><u>Science</u></b></button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="downloads/science_grade1_part1.pdf" target = "blank">Science Part 1</a>
+                            <a href="downloads/science_grade1_part2.pdf" target = "blank">Science Part 2</a>
+                        </div>
                     </th>
-                    <th>
+                <!--<th>
                         <a href = "downloads/writing_grade3.pdf" target = "blank">Writing</a>
                     </th>
                 </tr>

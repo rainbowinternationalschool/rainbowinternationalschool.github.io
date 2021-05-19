@@ -167,12 +167,13 @@ a {
   align-items: center;
   visibility: hidden;
   opacity: 0;
+  transition: 0.2s;
 }
 
 .active {
   visibility: visible;
   opacity: 1;
-  fadeIn: 0.2s;
+  transition: 0.2s;
 }
 
 .video video {
