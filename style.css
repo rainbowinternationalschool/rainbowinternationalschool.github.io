@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    background-color: rgb(229, 230, 250);
+    background-color: rgb(67, 40, 129);
 }
 
 h1, h2, h3, h4, h5, p, label, th {
@@ -41,83 +41,83 @@ label {
   margin-right: auto;
 }
 
-.button:hover {
+.button {
   background-color: #008CBA;
   color: white;
 }
 
 a {
   text-align: center;
-  color: blue;
+  color: rgb(92, 10, 10);
   font-size:xx-large;
 }
 
-.button1 {
+.button_violet {
   border: 2px solid violet; /*violet*/
   background-color: white;
 }
 
-.button1:hover {
+.button_violet {
   background-color: violet; 
   color: white
 }
 
-.button2 {
-  border: 2px solid indigo; /*indigo*/
+.button_indigo {
+  border: 2px solid rgb(123, 1, 211); /*indigo*/
   background-color: white;
 }
 
-.button2:hover {
-  background-color: indigo; 
+.button_indigo {
+  background-color: rgb(123, 1, 211); 
   color: white
 }
 
-.button3 {
+.button_blue {
   border: 2px solid blue; /*blue*/
   background-color: white;
 }
 
-.button3:hover {
+.button_blue {
   background-color: blue;
   color: white
 }
 
-.button4 {
+.button_green {
   border: 2px solid green; /*green*/
   background-color: white;
 }
 
-.button4:hover {
+.button_green {
   background-color: green;
   color: white
 }
 
-.button5 {
+.button_yellow {
   border: 2px solid rgb(230, 230, 15); /*yellow*/
   background-color: white;
 }
 
-.button5:hover {
+.button_yellow {
   background-color: rgb(230, 230, 15); 
   color: white
 }
 
-.button6 {
+.button_orange {
   border: 2px solid orange; /*orange*/
   background-color: white;
 }
 
-.button6:hover {
+.button_orange {
   background-color: orange;
   color: white
 }
 
-.button7 {
+.button_red {
   border: 2px solid red; /*red*/
   background-color: white;
 }
 
-.button7:hover {
+.button_red {
   background-color: red;
   color: white
 }
@@ -197,4 +197,8 @@ a {
   cursor: pointer;
   filter: invert(1);
   max-width: 32px;
+}
+
+span {
+  color: rgb(92, 10, 10) !important;
 }
