@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function noFile() {
+                alert("This file is not available yet. Please check again later.")
+            }
+            function dropdown(a) {
+                a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+                }
+        </script>
+        <style>
+            th {
+              border: 1px solid black;
+              background-color: rgb(255, 255, 255);
+            }
+        </style>
+        <link rel="stylesheet" href="../style.css">
+        <title>
+            Rainbow International School
+        </title>
+    </head>
+    <body>
+        <div style = "text-align: center; padding-top: 10px; padding-bottom: 10px;">
+            <img src = "../images/header.png">
+        </div>
+        <hr style = "width: 100%;">
+        <br>
+        <div style = "text-align: center; padding-top: 10px; padding-bottom: 10px;">
+            <br>
+            <p style = "color: black;font-size: 64px;"><b>Grade 8</b></p>
+            <br>
+            <table class = "center" style = "border: 10px solid black; width: 20%; table-layout: fixed;">
+                <tr>
+                    <th>
+                        <a href = "downloads/pointers_grade8.pdf" target = "blank">Pointers</a>
+                    </th>
+                </tr>
+            </table>
+            <br>
+            <table class = "center" style = "border: 10px solid black; width: 30%; table-layout: fixed;">
+                <tr>
+                    <!-- <th>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Maths</u></b></button>
+                    </th> -->
+                    <th>
+                        <div id="dropdown" onClick="dropdown(this)">
+                            <button style = "background-color: white; border: none; font-size: xx-large; width: 90px; height: 47px; font-family: inherit;"><b style = "color: blue;"><u>Arabic</u></b></button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="downloads/arabic_grade8.pdf" target = "blank">Arabic Without Answers</a>
+                            <a href="downloads/arabic_grade8_answered.pdf">Arabic With Answers</a>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <b><a href = "downloads/computers_grade8.pdf" target = "blank">Computers</a></b>
+                    </th>
+                </tr>
+                <tr>
+                     <th>
+                        <a href = "downloads/islamic_grade8.pdf" target="_blank">Islamic</a>
+                    </th>
+                </tr>
+                <!-- <tr>
+                    <th>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>EAP</u></b></button>
+                    </th>
+                    <th>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Biology</u></b></button>
+                    </th>
+                </tr> -->
+                <tr>
+                    <th>
+                        <b><a href = "downloads/business_studies_grade8.pdf" target = "blank">Business Studies  </a></b>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="dropdown" onClick="dropdown(this)">
+                            <button style = "background-color: white; border: none; font-size: xx-large; width: 90px; height: 47px; font-family: inherit;"><b style = "color: blue;"><u>SH</u></b></button>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="downloads/sh_grade8.pdf" target = "blank">SH Without Answers</a>
+                            <a href="downloads/sh_grade8_answered.pdf" target = "blank">SH With Answers</a>
+                        </div>
+                </tr>
+                <tr>
+                    <th>
+                        <a href = "downloads/checkpoint_grade8.pdf" target="_blank">Checkpoint</a>
+                    </th>
+                    <!-- <th>
+                        <button onclick="noFile()" style = "background-color: white; border: none; font-size: xx-large; font-family: inherit;"><b style = "color: blue;"><u>Chemistry</u></b></button>
+                    </th> -->
+                </tr> 
+            </table>
+        </div>
+    </body>
+</html>
