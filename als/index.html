@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function dropdown(a) {
+                a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+                }
+            function noFile() {
+                alert("This file is not available yet. Please check again later.")
+            }
+            function togglevid(){
+                var vidDiv = document.querySelector(".video")
+                vidDiv.classList.toggle("active")
+                var video = document.querySelector("video")
+                video.pause();
+                video.currentTime = 0;
+            }
+        </script>
+        <style>
+            h1, h2 {
+                color: black !important; 
+            }
+        </style>
+        <link rel="stylesheet" href="../style.css">
+        <title>
+            Rainbow International School
+        </title>
+    </head>
+    <body style = "overflow-x: hidden;">
+        <div style = "text-align: center; padding-top: 10px; padding-bottom: 10px; padding-right: 5px;">
+            <img src = "../images/header.png">
+        </div>
+        <hr style = "width: 100%;">
+        <br>
+        <div style = "text-align: center; padding-bottom: 10px;">
+            <p style = "font-size: 48px; padding-top: 0px; color: black;">
+                Assessment of Listening and Speaking (ALS) - Practice
+            </p>
+			<br>
+			<br>
+			<div style="display:flex;justify-content:center;align-items:center; text-size: x-large;">
+					Instructions:
+			</div>
+			<div style="display:flex;justify-content:center;align-items:center;">
+					    Sit in a quiet room.
+					<br>
+					    Use headphones, if available.
+					<br>
+					    Make sure there are no distractions around you.
+					<br>
+					    Listen to the audio carefully.
+					<br>
+					    Answer the given questions properly.
+			</div>
+            <!-- <img src = "images/sun.png" style="float: left; padding-left: 2%;" height = 370.28px width = 284px>
+            <img src = "images/routine.png" style = "float: right; padding-right: 2%;" height = 370.28px width = 284px> -->
+			<!--
+				<audio controls>
+					<source src="horse.ogg" type="audio/ogg">
+					<source src="horse.mp3" type="audio/mpeg">	
+					Your browser does not support the audio tag.
+				</audio>
+			-->
+			<hr style = "width: 50%;">
+			<p style = "font-size: 32px; padding-top: 0px; color: black;">Part 1</p>
+			<hr style = "width: 50%;">
+			<h1 style = "text-align: center; color: #66e7ed !important;">First Day At School</h1>
+			<audio controls>
+				<source src = "resources/part1/first_day_at_school.mp3" type="audio/mpeg">
+				<source src = "resources/part1/first_day_at_school.ogg" type = "audio/ogg">
+			</audio>
+			<p style - "text-align:center;">
+				<a href = "resources/part1/first_day_questions.pdf" target = "blank">Questions</a>
+			</p>
+			<hr style = "width: 10%">
+			<h1 style = "text-align: center; color: #66e7ed !important;">Leopard Spots</h1>
+			<audio controls>
+				<source src = "resources/part1/leopard_spots.mp3" type="audio/mpeg">
+				<source src = "resources/part1/leopard_spots.ogg" type = "audio/ogg">
+			</audio>
+			<hr style = "width: 10%">
+			
+			<h1 style = "text-align: center; color: #66e7ed !important;">The Velveteen Rabbit</h1>
+			<audio controls>
+				<source src = "resources/part1/velveteen_rabbit.mp3" type="audio/mpeg">
+				<source src = "resources/part1/velveteen_rabbit.ogg" type = "audio/ogg">
+			</audio>
+			<hr style = "width: 50%;">
+			<p style = "font-size: 32px; padding-top: 0px; color: black;">Part 2</p>
+			<hr style = "width: 50%;">
+			<h1 style = "text-align: center; color: #66e7ed !important;">Going to the Cinema</h1>
+			<audio controls>
+				<source src = "resources/part2/going_to_the_cinema.mp3" type="audio/mpeg">
+				<source src = "resources/part2/going_to_the_cinema.ogg" type = "audio/ogg">
+			</audio>
+			<p style - "text-align:center;">
+				<a href = "resources/part2/going_to_cinema_questions.pdf" target = "blank">Questions</a>
+			</p>
+			<hr style = "width: 10%">
+			<h1 style = "text-align: center; color: #66e7ed !important;">Introducing a Friend</h1>
+			<audio controls>
+				<source src = "resources/part2/introducing_a_friend.mp3" type="audio/mpeg">
+				<source src = "resources/part2/introducing_a_friend.ogg" type = "audio/ogg">
+			</audio>
+			<p style - "text-align:center;">
+				<a href = "resources/part2/intro_friend_questions.pdf" target = "blank">Questions</a>
+			</p>
+			<hr style = "width: 10%">
+    </body>
+</html>
