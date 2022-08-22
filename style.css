@@ -2,8 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    background-color: rgb(67, 40, 129);
-    overflow-x: hidden;
+    background-image: url(images/background.jpg);
+	min-height: 100%;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, p, label, th {
@@ -202,4 +207,20 @@ a {
 
 span {
   color: rgb(92, 10, 10) !important;
+}
+
+.blink {
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
