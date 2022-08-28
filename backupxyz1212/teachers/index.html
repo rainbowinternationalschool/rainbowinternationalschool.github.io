@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function dropdown(a) {
+                a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+                }
+            function noFile() {
+                alert("This file is not available yet. Please check again later.")
+            }
+            function togglevid(){
+                var vidDiv = document.querySelector(".video")
+                vidDiv.classList.toggle("active")
+                var video = document.querySelector("video")
+                video.pause();
+                video.currentTime = 0;
+            }
+        </script>
+        <style>
+            h1, h2 {
+                color: black !important; 
+            }
+			tr {
+				width: fit-content;
+				height: auto;
+			}
+			th {
+				border: 1px solid black;
+				background-color: white;
+			}
+        </style>
+        <link rel="stylesheet" href="../style.css">
+        <title>
+            Rainbow International School
+        </title>
+    </head>
+    <body style = "overflow-x: hidden;">
+        <div style = "text-align: center; padding-top: 10px; padding-bottom: 10px; padding-right: 5px;">
+            <img src = "../images/header.png">
+        </div>
+        <hr style = "width: 100%;">
+        <br>
+        <div style = "text-align: center; padding-bottom: 10px;">
+            <p style = "font-size: 48px; padding-top: 0px; color: black;">
+                Welcome To The Academic Year 2021-22
+				<br>
+				<span style = "color: rgb(43, 211, 43) !important">Teacher's Schedules</span>
+            </p>
+            <!-- <img src = "images/sun.png" style="float: left; padding-left: 2%;" height = 370.28px width = 284px>
+            <img src = "images/routine.png" style = "float: right; padding-right: 2%;" height = 370.28px width = 284px> -->
+            <table class = "center" style = "border: 10px solid black; background-color: white; width: 50%;">
+                <tr>
+                    <th>
+                        <a href = "schedules/ABDUL KAREEM.pdf" target = "blank"> Abdul Kareem </a>
+                    </th>
+					<th>
+						<a href = "schedules/ABDUL LATIF.pdf" target = "blank"> Abdul Latif </a>
+					</th>
+                    <th>
+                        <a href = "schedules/ATEF.pdf" target = "blank"> Atef </a>
+                    </th>
+                </tr>
+                <tr>
+					<th>
+						<a href = "schedules/BATLAA.pdf" target = "blank"> Batlaa </a>
+					</th>
+                    <th>
+                        <a href = "schedules/DANICA.pdf" target = "blank"> Danica </a>
+                    </th>
+					<th>
+						<a href = "schedules/DEEMA.pdf" target = "blank"> Deema </a>
+					</th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href = "schedules/GHEIDA.pdf" target = "blank"> Gheida </a>
+                    </th>
+					<th>
+						<a href = "schedules/HESHAM.pdf" target = "blank"> Hesham </a>
+					</th>
+                    <th>
+                        <a href = "schedules/IFRAH.pdf" target = "blank"> Ifrah </a>
+                    </th>
+                </tr>
+                <tr>
+					<th>
+						<a href = "schedules/JABIR.pdf" target = "blank"> Jabir </a>
+					</th>
+                    <th>
+                        <a href = "schedules/KELVIN.pdf" target = "blank"> Kelvin </a>
+                    </th>
+					<th>
+						<a href = "schedules/LASDY.pdf" target = "blank"> Lasdy </a>
+					</th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href = "schedules/LYN.pdf" target = "blank"> Lyn </a>
+                    </th>
+					<th>
+						<a href = "schedules/MARIAM.pdf" target = "blank"> Mariam </a>
+					</th>
+                    <th>
+                        <a href = "schedules/MARY.pdf" target = "blank"> Mary </a>
+                    </th>
+                </tr>
+                <tr>
+					<th>
+						<a href = "schedules/MELISSA.pdf" target = "blank"> Melissa </a>
+					</th>
+                    <th>
+                        <a href = "schedules/NIZY.pdf" target = "blank"> Nizy </a>
+                    </th>
+					<th>
+						<a href = "schedules/NORMA.pdf" target = "blank"> Norma </a>
+					</th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href = "schedules/ORLANDO.pdf" target = "blank"> Orlando </a>
+                    </th>
+					<th>
+						<a href = "schedules/QAMAR.pdf" target = "blank"> Qamar </a>
+					</th>
+                    <th>
+                        <a href = "schedules/RAJAA.pdf" target = "blank"> Rajaa </a>
+                    </th>
+                </tr>
+                <tr>
+					<th>
+						<a href = "schedules/RASHA.pdf" target = "blank"> Rasha </a>
+					</th>
+                    <th>
+                        <a href = "schedules/RODELYN.pdf" target = "blank"> Rodelyn </a>
+                    </th>
+					<th>
+						<a href = "schedules/RUTH.pdf" target = "blank"> Ruth </a>
+					</th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href = "schedules/SALWA.pdf" target = "blank"> Salwa </a>
+                    </th>
+					<th>
+						<a href = "schedules/SHAFINA.pdf" target = "blank"> Shafina </a>
+					</th>
+                    <th>
+                        <a href = "schedules/SULTANA.pdf" target = "blank"> Sultana </a>
+                    </th>
+                </tr>
+                <tr>
+					<th>
+						<a href = "schedules/TOOBA.pdf" target = "blank"> Tooba </a>
+					</th>
+                    <th>
+                        <a href = "schedules/sheikha.pdf" target = "blank"> Sheikha </a>
+                    </th>
+					<th>
+						<a href = "schedules/rasheed.pdf" target = "blank"> Rasheed </a>
+					</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
